@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="robots" content="noindex,nofollow">
+  <script src="/templates.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <div class="m-container">
+      <div class="m-row">
+        <article class="m-col-m-10 m-push-m-1">
+          <section id="content"></div>
+            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+            <script>
+              var client = new XMLHttpRequest();
+              client.open('GET', '/articles/article1.md');
+              client.onreadystatechange = function() {
+                document.getElementById('content').innerHTML = marked.parse(client.responseText);
+              }
+              client.send();
+            </script>
+          </section>
+        </article>
+      </div>
+    </div>
+    </main>
+</body>
+</html>
