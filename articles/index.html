@@ -11,16 +11,15 @@
     <div class="m-container">
       <div class="m-row">
         <article class="m-col-m-10 m-push-m-1">
-        <header>
-          <h1>Samuel Longchamps - AK Dev</h1>
-        <header/>
-          <h2>Index</h2>
-          <section>
-            <div id="content"></div>
+          <section id="content"></div>
             <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
             <script>
-              document.getElementById('content').innerHTML =
-                marked.parse('# Marked in the browser\n\nRendered by **marked**.');
+              var client = new XMLHttpRequest();
+              client.open('GET', '/articles/article1.md');
+              client.onreadystatechange = function() {
+                document.getElementById('content').innerHTML = marked.parse(client.responseText);
+              }
+              client.send();
             </script>
           </section>
         </article>
