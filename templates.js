@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     <nav id="navigation">
       <div class="m-container">
         <div class="m-row">
-          <a href="#" id="m-navbar-brand" class="m-col-t-9 m-col-m-none m-left-m">ak-slongchamps</a>
+          <a href="/index.html" id="m-navbar-brand" class="m-col-t-9 m-col-m-none m-left-m">ak-slongchamps</a>
           <a id="m-navbar-show" href="#navigation" title="Show navigation" class="m-col-t-3 m-hide-m m-text-right"></a>
           <a id="m-navbar-hide" href="#" title="Hide navigation" class="m-col-t-3 m-hide-m m-text-right"></a>
           <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
